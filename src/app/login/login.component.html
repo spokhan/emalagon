@@ -1,0 +1,22 @@
+<div class="loading">
+  <div class="circle light"></div>
+  <div class="circle dark"></div>
+  <div class="branding"></div>
+</div>
+
+<div class="login">
+<form [formGroup]="profileForm" (ngSubmit)="login()">
+
+  <label for="usr">Usuario: </label>
+  <input id="usr" type="email" formControlName="email"  placeholder="Username" email="true" >
+  <label for="valida" *ngIf="inputEmail?.hasError('email')">Email invalido</label>
+  <br/><br/>
+  <div>
+    <span class="text-error" *ngIf="inputEmail?.hasError('email')"></span>
+  </div>
+  <label for="pwd">Password: </label>
+  <input id="pwd" type="password" formControlName="password" placeholder="Password">
+  <button type="submit" [disabled]="validaCompletos()" class="btn btn-primary btn-block btn-large">LogIn</button>
+</form>
+</div>
+

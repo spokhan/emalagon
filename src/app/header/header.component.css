@@ -1,0 +1,45 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+button {
+    background: linear-gradient(to bottom, #009EFF 0px, #0075BC 100%) repeat scroll 0 0 transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 #E6F5FF inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    width: 10%;
+}

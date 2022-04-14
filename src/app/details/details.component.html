@@ -1,0 +1,25 @@
+<app-header title="Home"></app-header>
+Detalle de usuario
+<div class="center" *ngIf="user != undefined">
+
+ 
+<div class="a-box">
+    <div class="img-container">
+      <div class="img-inner">
+        <div class="inner-skew">
+          <img src={{user.data.avatar}}>
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <h3>{{user.data.id}}. {{user.data.first_name}} {{user.data.last_name}}</h3>
+      <div>
+        {{user.data.email}}
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <p></p>
+  <button (click)="regresar()">Regresar</button>
+  </div>
+  
+</div>

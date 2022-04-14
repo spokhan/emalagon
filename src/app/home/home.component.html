@@ -1,0 +1,22 @@
+<app-header title="Home"></app-header>
+<h1>Lista de usuarios</h1>
+<div *ngIf="ro != undefined">
+    <table class="container">
+        <tbody>
+            <tr *ngFor="let fila of ro.data">
+    
+                <td >
+                    {{fila.id}}
+                </td>
+                <td >
+                    {{fila.email}}
+                </td>
+                
+                <td (click)="detalle(fila)">
+                    <a>Mostrar detalle</a>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
